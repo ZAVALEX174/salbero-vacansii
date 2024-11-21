@@ -259,3 +259,40 @@ img {
 .together__title::first-letter {
   text-transform: uppercase;
 }
+
+.sliderTogetherSwiper .swiper-button-next,
+.sliderTogetherSwiper .swiper-rtl .swiper-button-prev,
+.sliderTogetherSwiper .swiper-button-prev,
+.sliderTogetherSwiper .swiper-rtl .swiper-button-next {
+  width: 29px;
+  height: 47px;
+  background-color: var(--zoloto);
+  border-radius: 10px;
+}
+.sliderTogetherSwiper .swiper-button-next {
+  right: 135px;
+}
+.sliderTogetherSwiper .swiper-button-prev {
+  left: 135px;
+}
+.sliderTogetherSwiper .swiper-button-next:after,
+.sliderTogetherSwiper .swiper-button-prev:after {
+  font-size: 13px;
+  color: #2b2b2b;
+  font-weight: 700;
+}
+.sliderTogetherSwiper .swiper-pagination-bullet {
+  width: 33px;
+  height: 2px;
+  background: #d9d9d9;
+  opacity: 0.5;
+  margin: 0 2px !important;
+}
+.sliderTogetherSwiper
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.sliderTogetherSwiper
+  .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 30px;
+}
