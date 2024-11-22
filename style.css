@@ -868,3 +868,21 @@ img {
   text-align: center;
   margin: 0 auto 45px;
 }
+.cooperation__brands {
+  width: 100%;
+}
+.cooperation__brands-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 45px 31px;
+}
+.cooperation__brands-item {
+  max-width: 270px;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.05);
+  border-top: 1px solid #676563;
+  border-bottom: 1px solid rgba(103, 101, 99, 0.5);
+}
