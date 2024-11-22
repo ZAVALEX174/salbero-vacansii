@@ -765,6 +765,7 @@ img {
 .results {
   width: 100%;
   padding: 100px 0;
+  border-bottom: 1px solid #676563;
 }
 .results__title {
   text-align: center;
@@ -856,4 +857,14 @@ img {
 }
 .results__text--active {
   color: var(--zoloto);
+}
+
+.cooperation {
+  border-top: 1px solid #676563;
+  width: 100%;
+  padding: 100px 0;
+}
+.cooperation__title {
+  text-align: center;
+  margin: 0 auto 45px;
 }
