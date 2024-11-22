@@ -3,6 +3,7 @@ var swiper = new Swiper(".sliderTogetherSwiper", {
   spaceBetween: 10,
   centeredSlides: true,
   speed: 3500,
+  loop: true,
   autoplay: {
     delay: 5000,
     disableOnInteraction: false
