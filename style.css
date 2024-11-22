@@ -33,6 +33,11 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
 }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #16120e;
@@ -565,4 +570,56 @@ img {
 .employeeReviewsSwiper
   .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 5px;
+}
+
+.owners {
+  width: 100%;
+  padding: 100px 0 60px;
+  border-bottom: 1px solid #676563;
+}
+.owners__title {
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+.owners__title--gold {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  color: var(--zoloto);
+  margin-bottom: 60px;
+}
+.owners__content-img-box {
+  width: 670px;
+  height: 552px;
+}
+.owners__content-desc {
+  max-width: 602px;
+  padding: 30px 60px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.owners__content-desc-parag {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--white);
+  text-align: start;
+}
+
+.form-slider-together {
+  width: 100%;
+  padding: 60px 0;
 }
