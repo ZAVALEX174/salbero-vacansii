@@ -761,3 +761,99 @@ img {
   text-align: center;
   color: var(--white);
 }
+
+.results {
+  width: 100%;
+  padding: 100px 0;
+}
+.results__title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.results__content {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.results__content-list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-flow: column dense;
+  grid-template-areas:
+    'one two'
+    'three two'
+    'four five';
+}
+.results__content-item {
+  width: 100%;
+  height: 271px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 27px 25px;
+}
+.results__content-item--big {
+  padding: 34px 30px;
+
+  background: url('images//results/02.jpg') no-repeat center/cover;
+}
+.results__content-item:nth-child(1) {
+  grid-area: one;
+  background: url('images//results/01.jpg') no-repeat center/cover;
+}
+.results__content-item:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  grid-area: two;
+}
+.results__content-item:nth-child(3) {
+  grid-area: three;
+  background: url('images//results/03.jpg') no-repeat center/cover;
+}
+.results__content-item:nth-child(4) {
+  grid-area: four;
+  background: url('images//results/04.jpg') no-repeat center/cover;
+}
+.results__content-item:nth-child(5) {
+  grid-area: five;
+  background: url('images//results/05.jpg') no-repeat center/cover;
+}
+.results__content-item-title {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  color: var(--zoloto);
+  margin-bottom: 5px;
+}
+.results__content-item-subtitle {
+  max-width: 435px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--white);
+}
+.results__content-item--big .results__content-item-subtitle {
+  max-width: 495px;
+}
+.results__text {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  color: var(--white);
+}
+.results__text--active {
+  color: var(--zoloto);
+}
