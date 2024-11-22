@@ -741,3 +741,23 @@ img {
   .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 5px;
 }
+
+.targets {
+  width: 100%;
+  padding: 206px 0 204px;
+}
+.targets__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.targets__subtitle {
+  margin: 0 auto 83px;
+  max-width: 675px;
+  padding: 0;
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--white);
+}
