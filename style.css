@@ -264,10 +264,13 @@ img {
 
 .slider-together {
   width: 100%;
-  height: 750px;
+  padding-bottom: 60px;
+  backdrop-filter: blur(8px);
+  background: rgba(30, 24, 18, 0.6);
 }
 .sliderTogetherSwiper {
   margin-bottom: 60px;
+  height: 750px;
 }
 .sliderTogetherSwiper .swiper-button-next,
 .sliderTogetherSwiper .swiper-rtl .swiper-button-prev,
@@ -330,7 +333,6 @@ img {
   width: 100%;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
 }
 .interview-form__input-box {
   width: 100%;
@@ -386,4 +388,180 @@ img {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   opacity: 0.5;
+}
+
+.slider-employee-reviews {
+  width: 100%;
+  padding: 60px 0;
+  height: 770px; /*временно*/
+}
+.slider-employee-reviews__title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.employeeReviewsSwiper .swiper-slide {
+  height: 500px;
+}
+/* .employeeReviewsSwiper .swiper-slide .container {
+  border: 1px solid red;
+} */
+.slider-employee-reviews__container {
+  display: flex;
+}
+.employeeReviewsSwiper .swiper-slide.slider-employee-reviews__box-left {
+  max-width: 300px;
+  width: 100%;
+  /* margin-right: auto; */
+}
+.slider-employee-reviews__box-left-image {
+  width: 170px;
+  height: 176px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 19px;
+}
+.slider-employee-reviews__box-left-name {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--white);
+  margin-bottom: 5px;
+}
+.slider-employee-reviews__box-left-job-title {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--white);
+}
+.slider-employee-reviews__box-center {
+  position: relative;
+  max-width: 450px;
+  width: 100%;
+  height: 445px;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+  padding-right: 10px;
+  padding-left: 30px;
+  /* background: linear-gradient(176deg, #fff 90%, #16120e 100%); */
+  /*background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  margin-left: auto;
+}
+.opacty-blok {
+  position: absolute;
+  height: 52px;
+  width: 100%;
+  background: #16120e;
+  opacity: 0.8;
+  left: 0;
+  bottom: -21px;
+}
+.slider-employee-reviews__box-right {
+  width: 370px;
+  height: 445px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  /* margin-left: auto; */
+}
+.slider-employee-reviews__box-center-title {
+  padding-top: 36px;
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--zoloto);
+  -webkit-text-fill-color: var(--zoloto);
+  position: relative;
+  margin-bottom: 20px;
+}
+.slider-employee-reviews__box-center-title::before {
+  position: absolute;
+  content: '';
+  width: 21px;
+  height: 21px;
+  top: 0;
+  left: 0;
+  background: url(images/employee-reviews-slider/kavichki.svg) no-repeat
+    center/cover;
+}
+.slider-employee-reviews__box-center-parag {
+  /* position: relative; */
+  max-width: 404px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--white);
+}
+.pb100 {
+  padding-bottom: 100px;
+}
+.slider-employee-reviews__box-center::-webkit-scrollbar {
+  width: 160px;
+}
+.slider-employee-reviews__box-center::-webkit-scrollbar-track {
+  background-color: darkgrey;
+}
+.slider-employee-reviews__box-center::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.slider-employee-reviews__box-center {
+  scrollbar-width: thin;
+}
+.slider-employee-reviews__box-center {
+  scrollbar-color: #6969dd #e0e0e0;
+  scrollbar-width: thin;
+}
+.employeeReviewsSwiper .swiper-button-next,
+.employeeReviewsSwiper .swiper-rtl .swiper-button-prev,
+.employeeReviewsSwiper .swiper-button-prev,
+.employeeReviewsSwiper .swiper-rtl .swiper-button-next {
+  width: 29px;
+  height: 47px;
+  background-color: var(--zoloto);
+  border-radius: 10px;
+  top: auto;
+  bottom: 5px;
+  z-index: 100;
+}
+.employeeReviewsSwiper .swiper-button-next {
+  right: 135px;
+}
+.employeeReviewsSwiper .swiper-button-prev {
+  left: 135px;
+}
+.employeeReviewsSwiper .swiper-button-next:after,
+.employeeReviewsSwiper .swiper-button-prev:after {
+  font-size: 13px;
+  /* color: #2b2b2b; */
+  color: #000;
+  font-weight: 900;
+}
+.employeeReviewsSwiper .swiper-pagination-bullet {
+  width: 33px;
+  height: 2px;
+  background: #d9d9d9;
+  opacity: 0.5;
+  margin: 0 2px !important;
+}
+.employeeReviewsSwiper
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.employeeReviewsSwiper
+  .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 5px;
 }
