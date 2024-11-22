@@ -884,5 +884,106 @@ img {
   backdrop-filter: blur(8px);
   background: rgba(0, 0, 0, 0.05);
   border-top: 1px solid #676563;
-  border-bottom: 1px solid rgba(103, 101, 99, 0.5);
+  border-bottom: 1px solid rgba(103, 101, 99, 0.2);
+}
+
+.slider-clients {
+  width: 100%;
+  padding: 100px 0;
+  border-bottom: 1px solid #676563;
+}
+.slider-clients__title {
+  text-align: center;
+  margin-bottom: 52px;
+}
+.sliderClientsSwiper {
+  height: 454px;
+}
+.slider-clients__container {
+  display: flex;
+  column-gap: 32px;
+}
+.slider-clients__box-center {
+  overflow-y: visible;
+  max-width: 632px;
+}
+.content-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.slider-clients__box-center-title {
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--zoloto);
+}
+.slider-clients__box-center-parag {
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: justify;
+  color: var(--white);
+}
+.slider-clients__box-center-parag-aphtor {
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: right;
+  color: var(--white);
+}
+.slider-clients__box-left-image {
+  border-radius: 10px;
+  width: 207px;
+  height: 218px;
+  overflow: hidden;
+}
+.slider-clients__box-right {
+  border-radius: 10px;
+  width: 263px;
+  height: 356px;
+  overflow: hidden;
+}
+.sliderClientsSwiper .swiper-button-next,
+.sliderClientsSwiper .swiper-rtl .swiper-button-prev,
+.sliderClientsSwiper .swiper-button-prev,
+.sliderClientsSwiper .swiper-rtl .swiper-button-next {
+  width: 29px;
+  height: 47px;
+  background-color: var(--zoloto);
+  border-radius: 10px;
+  top: auto;
+  bottom: 5px;
+  z-index: 100;
+}
+.sliderClientsSwiper .swiper-button-next {
+  right: 135px;
+}
+.sliderClientsSwiper .swiper-button-prev {
+  left: 135px;
+}
+.sliderClientsSwiper .swiper-button-next:after,
+.sliderClientsSwiper .swiper-button-prev:after {
+  font-size: 13px;
+  /* color: #2b2b2b; */
+  color: #000;
+  font-weight: 900;
+}
+.sliderClientsSwiper .swiper-pagination-bullet {
+  width: 33px;
+  height: 2px;
+  background: #d9d9d9;
+  opacity: 0.5;
+  margin: 0 2px !important;
+}
+.sliderClientsSwiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.sliderClientsSwiper
+  .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 5px;
 }
