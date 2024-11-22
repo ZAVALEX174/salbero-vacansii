@@ -1077,3 +1077,23 @@ img {
   color: var(--white);
   margin-bottom: 10px;
 }
+
+.map {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.map__container {
+  width: 100%;
+  height: 560px;
+  position: relative;
+}
+.map__container::after {
+  position: absolute;
+  content: '';
+  top: 55%;
+  left: 48%;
+  width: 60px;
+  height: 67px;
+  background: url('images/map/geo-icon.svg') no-repeat center/cover;
+}
