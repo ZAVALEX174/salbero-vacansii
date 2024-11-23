@@ -818,19 +818,29 @@ img {
   .owners__title--gold {
     margin-bottom: 20px;
   }
+  .owners__content-img-box {
+    height: 400px;
+  }
   .owners__content-desc {
     align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
   }
   .owners__content-desc-parag {
     text-align: center;
   }
 }
-
+@media (max-width: 400px) {
+  .owners__content-img-box {
+    height: 200px;
+  }
+}
+/* =================================form-slider-together=============================== */
 .form-slider-together {
   width: 100%;
   padding: 60px 0;
 }
-
+/* =================================lubyat=============================== */
 .lubyat {
   width: 100%;
   padding: 102px 0;
@@ -879,7 +889,46 @@ img {
   text-align: center;
   color: var(--white);
 }
-
+@media (max-width: 1024px) {
+  .lubyat__description-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .lubyat {
+    padding: 30px 0;
+  }
+  .lubyat__description-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .lubyat__description-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    width: 100%;
+    border-radius: 0;
+    background-color: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-top: none;
+    border-bottom: none;
+  }
+  .lubyat__description-item svg {
+    margin-bottom: 0;
+    margin-right: 15px;
+    max-width: 37px;
+    width: 100%;
+    height: 100%;
+  }
+  .lubyat__description-item-text {
+    text-align: left;
+  }
+}
+/* =================================slider-reviews=============================== */
 .slider-reviews {
   width: 100%;
   padding: 60px 0;
@@ -949,7 +998,7 @@ img {
   .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 5px;
 }
-
+/* =================================targets=============================== */
 .targets {
   width: 100%;
   padding: 206px 0 204px;
@@ -970,7 +1019,7 @@ img {
   text-align: center;
   color: var(--white);
 }
-
+/* =================================results=============================== */
 .results {
   width: 100%;
   padding: 100px 0;
@@ -1069,7 +1118,7 @@ img {
 .results__text--active {
   color: var(--zoloto);
 }
-
+/* =================================cooperation=============================== */
 .cooperation {
   border-top: 1px solid #676563;
   width: 100%;
@@ -1097,7 +1146,7 @@ img {
   border-top: 1px solid #676563;
   border-bottom: 1px solid rgba(103, 101, 99, 0.2);
 }
-
+/* =================================slider-clients=============================== */
 .slider-clients {
   width: 100%;
   padding: 100px 0;
@@ -1201,7 +1250,7 @@ img {
   .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 5px;
 }
-
+/* =================================awards=============================== */
 .awards {
   width: 100%;
   padding: 100px 0;
@@ -1222,7 +1271,7 @@ img {
 .awardsSwiper .swiper-wrapper {
   padding-left: 135px;
 }
-
+/* =================================candidates=============================== */
 .candidates {
   width: 100%;
   padding: 86px 0;
@@ -1295,7 +1344,7 @@ img {
   color: var(--white);
   margin-bottom: 10px;
 }
-
+/* =================================map=============================== */
 .map {
   width: 100%;
   margin: 0;
