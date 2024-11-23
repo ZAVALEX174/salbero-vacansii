@@ -1421,3 +1421,8 @@ img {
   height: 67px;
   background: url('images/map/geo-icon.svg') no-repeat center/cover;
 }
+@media (max-width: 576px) {
+  .map__container {
+    height: 420px;
+  }
+}
