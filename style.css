@@ -1019,6 +1019,16 @@ img {
   text-align: center;
   color: var(--white);
 }
+@media (max-width: 576px) {
+  .targets {
+    padding: 60px 0;
+  }
+  .targets__subtitle,
+  .targets__form {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
 /* =================================results=============================== */
 .results {
   width: 100%;
