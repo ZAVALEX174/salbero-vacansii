@@ -365,7 +365,15 @@ img {
 .together__title::first-letter {
   text-transform: uppercase;
 }
-
+@media (max-width: 576px) {
+  .together {
+    padding: 60px 0;
+  }
+  .together__title {
+    margin-bottom: 15px;
+  }
+}
+/* =================================slider-together=============================== */
 .slider-together {
   width: 100%;
   padding-bottom: 60px;
