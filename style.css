@@ -1188,6 +1188,21 @@ img {
   border-top: 1px solid #676563;
   border-bottom: 1px solid rgba(103, 101, 99, 0.2);
 }
+@media (max-width: 576px) {
+  .cooperation {
+    border-top: 1px solid transparent;
+    padding: 30px 0;
+  }
+  .cooperation__title {
+    text-align: center;
+    margin: 0 auto 30px;
+  }
+  .cooperation__brands-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 16px 16px;
+  }
+}
 /* =================================slider-clients=============================== */
 .slider-clients {
   width: 100%;
