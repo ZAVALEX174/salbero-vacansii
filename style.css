@@ -1066,7 +1066,6 @@ img {
 }
 .results__content-item--big {
   padding: 34px 30px;
-
   background: url('images//results/02.jpg') no-repeat center/cover;
 }
 .results__content-item:nth-child(1) {
@@ -1127,6 +1126,20 @@ img {
 }
 .results__text--active {
   color: var(--zoloto);
+}
+@media (max-width: 740px) {
+  .results__content-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .results__content-item {
+    width: 100%;
+    min-height: 271px;
+  }
+  .results__content-item--big {
+    padding: 27px 25px;
+  }
 }
 /* =================================cooperation=============================== */
 .cooperation {
