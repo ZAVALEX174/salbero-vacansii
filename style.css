@@ -422,6 +422,29 @@ img {
   .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 30px;
 }
+@media (max-width: 1023px) {
+  .sliderTogetherSwiper .swiper-button-next,
+  .sliderTogetherSwiper .swiper-rtl .swiper-button-prev,
+  .sliderTogetherSwiper .swiper-button-prev,
+  .sliderTogetherSwiper .swiper-rtl .swiper-button-next {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .sliderTogetherSwiper .swiper-button-next:after,
+  .sliderTogetherSwiper .swiper-button-prev:after {
+    content: none;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .sliderTogetherSwiper {
+    height: 426px;
+  }
+}
 .slider-together__form {
   margin: 0 auto;
   max-width: 990px;
