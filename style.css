@@ -840,6 +840,18 @@ img {
   width: 100%;
   padding: 60px 0;
 }
+@media (max-width: 576px) {
+  .form-slider-together {
+    padding: 30px 0;
+  }
+  .slider-together__form {
+    padding: 0 25px;
+  }
+  .interview-form__input--name,
+  .interview-form__input--call-umber {
+    margin-right: 0;
+  }
+}
 /* =================================lubyat=============================== */
 .lubyat {
   width: 100%;
