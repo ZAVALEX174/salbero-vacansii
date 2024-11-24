@@ -9,10 +9,10 @@
     <title>Вакансии</title>
     <link rel="stylesheet" href="fonts.css" />
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="swiper-bundle.css" />
+    <link rel="stylesheet" href="simplebar.css" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
   </head>
   <body>
     <header class="header"></header>
@@ -287,7 +287,7 @@
           </form>
         </div>
       </section>
-      <!-- <section class="slider-employee-reviews">
+      <section class="slider-employee-reviews">
         <h2 class="title slider-employee-reviews__title">
           <b class="title__active">Отзывы</b> сотрудников
         </h2>
@@ -309,7 +309,7 @@
                     Продавец консультант
                   </div>
                 </div>
-                <div class="slider-employee-reviews__box-center">
+                <div class="slider-employee-reviews__box-center" data-simplebar>
                   <div class="content-box">
                     <h3 class="slider-employee-reviews__box-center-title">
                       Я значительно улучшила свои <br />
@@ -683,7 +683,7 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
-      </section> -->
+      </section>
       <section
         class="owners"
         style="
@@ -2134,7 +2134,9 @@
       </div>
       <a> </a>
     </footer> -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="js/swiper-bundle.js" defer></script>
+    <script src="js/simplebar.js" defer></script>
     <script src="js/sliderTogetherSwiper.js" defer></script>
     <script src="js/employeeReviewsSwiper.js" defer></script>
     <script src="js/reviewsSwiper.js" defer></script>
