@@ -645,11 +645,20 @@ img {
 .employeeReviewsSwiper .swiper-slide {
   height: 445px !important;
   overflow-y: hidden;
+
+  @media (max-width: 980px) {
+    height: auto !important;
+  }
 }
 
 .employeeReviewsSwiper-slider-box {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 980px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .employeeReviewsSwiper .slider-box__left {
   display: grid;
@@ -661,9 +670,31 @@ img {
     'name text'
     'job text'
     '. text';
+
+  @media (max-width: 1135px) {
+    grid-template-columns: minmax(155px, 200px) minmax(250px, 450px);
+  }
+  @media (max-width: 621px) {
+    column-gap: 15px;
+    grid-template-columns: 155px minmax(153px, 1fr);
+    grid-template-rows: 16px 50px 89px 200px;
+    grid-template-areas:
+    'img1 name'
+    'img1 job'
+    'img .'
+    'text text';
+  }
 }
 .scroll-box {
   overflow-y: auto;
+
+  @media (max-width: 980px) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 621px) {
+    max-width: 100%;
+  }
 }
 .slider-employee-reviews__box-left-image {
   width: 170px;
@@ -672,6 +703,11 @@ img {
   overflow: hidden;
   margin-bottom: 19px;
   grid-area: img1;
+
+  @media (max-width: 621px) {
+    width: 155px;
+    height: 155px;
+  }
 }
 
 .slider-employee-reviews__box-left-name {
@@ -703,16 +739,27 @@ img {
   margin-left: auto;
   padding-left: 30px;
   overflow-y: auto;
-  /*width: 100%;*/
+
+  @media (max-width: 621px) {
+    margin-top: -132px;
+    padding-left: 0;
+  }
 }
 .slider-employee-reviews__box-right {
   width: 370px;
   height: 445px;
-  /* margin-bottom: 20px; */
   border-radius: 10px;
   overflow: hidden;
-  /* margin-left: auto; */
   grid-area: img2;
+
+  @media (max-width: 1135px) {
+    width: 300px;
+  }
+
+  @media (max-width: 980px) {
+    width: 100%;
+    height: 200px;
+  }
 }
 
 .slider-employee-reviews__box-center-title {
@@ -726,6 +773,11 @@ img {
   -webkit-text-fill-color: var(--zoloto);
   position: relative;
   margin-bottom: 20px;
+
+  @media (max-width: 621px) {
+    /*width: 100%;*/
+    margin-left: 173px;
+  }
 }
 
 .slider-employee-reviews__box-center-title::before {
@@ -752,6 +804,10 @@ img {
   font-size: clamp(0.8125rem, 0.7465rem + 0.2817vw, 1rem);
   line-height: 1.2;
   color: var(--white);
+
+  @media (max-width: 621px) {
+    max-width: 100%;
+  }
 }
 .simplebar-track.simplebar-vertical {
   width: 2px;
@@ -802,10 +858,18 @@ img {
 
 .employeeReviewsSwiper .swiper-button-next {
   right: 135px;
+
+  @media (max-width: 980px) {
+    right: 25px;
+  }
 }
 
 .employeeReviewsSwiper .swiper-button-prev {
   left: 135px;
+
+  @media (max-width: 980px) {
+    left: 25px;
+  }
 }
 
 .employeeReviewsSwiper .swiper-button-next:after,
