@@ -679,10 +679,10 @@ img {
     grid-template-columns: 155px minmax(153px, 1fr);
     grid-template-rows: 16px 50px 89px 200px;
     grid-template-areas:
-    'img1 name'
-    'img1 job'
-    'img .'
-    'text text';
+      'img1 name'
+      'img1 job'
+      'img .'
+      'text text';
   }
 }
 .scroll-box {
@@ -817,6 +817,11 @@ img {
   left: 0;
   padding: 0;
   margin: 0;
+
+  @media (max-width: 621px) {
+    left: auto;
+    right: 0;
+  }
 }
 
 .simplebar-track.simplebar-vertical .simplebar-scrollbar {
