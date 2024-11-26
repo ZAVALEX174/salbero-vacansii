@@ -1722,7 +1722,7 @@ img {
 }
 
 .awardsSwiper .swiper-slide {
-  width: 270px !important;
+  /*width: 270px !important;*/
   /* height: 377px !important; */
   text-align: center;
   margin-top: auto;
@@ -1731,7 +1731,11 @@ img {
 }
 
 .awardsSwiper .swiper-wrapper {
-  padding-left: 135px;
+  /*padding-left: 135px;*/
+  padding-left: calc((100% - 1200px)/2);
+  @media (max-width: 621px) {
+    margin-left: -100px;
+  }
 }
 
 /* =================================candidates=============================== */
