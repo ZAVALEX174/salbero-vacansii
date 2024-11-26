@@ -770,6 +770,7 @@ img {
     margin-top: -132px;
     padding-left: 0;
     padding-right: 10px;
+    margin-left: 0;
   }
 }
 .slider-employee-reviews__box-right {
@@ -1881,6 +1882,7 @@ img {
   max-width: 971px;
   width: 100%;
   margin-left: 0;
+  padding: 0;
 }
 
 .candidates .slider-together__form-title {
