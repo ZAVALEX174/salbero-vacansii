@@ -117,6 +117,7 @@ img {
   padding-bottom: 114px;
   @media (max-width: 576px) {
     padding-bottom: 37px;
+    background: url("images/hero/bgm.jpg") no-repeat center/cover !important ;
   }
 }
 
@@ -388,6 +389,10 @@ img {
 
   .employees__content-list {
     row-gap: 30px;
+  }
+
+  .employees__content-img-box {
+    height: 200px;
   }
 
   .employees__content-desc {
@@ -1042,6 +1047,7 @@ img {
 
   .slider-together__form {
     padding: 0 25px;
+    margin-right: 0;
   }
 
   .interview-form__input--name,
@@ -1117,6 +1123,7 @@ img {
 @media (max-width: 576px) {
   .lubyat {
     padding: 30px 0;
+    /*background: url("images/lubyat/bgm.jpg") no-repeat center right / cover !important;*/
   }
 
   .lubyat__description-list {
@@ -1339,6 +1346,7 @@ img {
 @media (max-width: 576px) {
   .targets {
     padding: 60px 0;
+    background: url("images/targets/bgm.jpg") center/cover no-repeat !important;
   }
 
   .targets__subtitle,
@@ -1821,7 +1829,11 @@ img {
   color: var(--white);
   margin-bottom: 10px;
 }
-
+@media (max-width: 621px) {
+  .candidates {
+    background: url("images/slider-together/bgm.png") no-repeat center / cover !important;
+  }
+}
 /* =================================map=============================== */
 .map {
   width: 100%;
