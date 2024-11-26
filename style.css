@@ -122,7 +122,7 @@ img {
 }
 
 .hero__content {
-  padding-top: 28px;
+  padding-top: 32px;
 }
 
 .hero__subtitle {
@@ -135,7 +135,7 @@ img {
   line-height: 1.2;
   text-transform: uppercase;
   color: var(--zoloto);
-  margin-bottom: 78px;
+  margin-bottom: 80px;
 }
 
 .hero__title {
@@ -255,11 +255,11 @@ img {
 /* =================================employees=============================== */
 .employees {
   width: 100%;
-  padding: 100px 0;
+  padding: 100px 0 116px;
 }
 
 .employees__title {
-  margin-bottom: 69px;
+  margin-bottom: 59px;
 }
 
 .employees__content-list {
@@ -353,6 +353,7 @@ img {
 .employees__content-item--text-title {
   text-transform: uppercase;
   text-align: center;
+  padding-top: 16px;
 }
 
 @media (max-width: 1068px) {
@@ -422,8 +423,13 @@ img {
 
 .together__title {
   /* text-align: center; */
-  margin-bottom: 48px;
+  margin-bottom: 45px;
   text-transform: lowercase;
+}
+.together__img {
+  margin: 0 auto;
+  max-width: 975px;
+  min-height: 234px;
 }
 
 .together__title::first-letter {
