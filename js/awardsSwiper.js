@@ -9,6 +9,9 @@ var awardsSwiper = new Swiper(".awardsSwiper", {
       slidesPerView: 2,
     }
     , 621: {
+      slidesPerView: 3.5,
+    }
+    , 800: {
       slidesPerView: 4.5,
     }
   }
