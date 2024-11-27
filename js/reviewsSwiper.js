@@ -13,3 +13,5 @@ var employeeReviewsSwiper = new Swiper(".reviewsSwiper", {
   mousewheel: true,
   keyboard: true,
 });
+
+document.querySelectorAll('.scroll-box2').forEach(el => new SimpleBar(el));
