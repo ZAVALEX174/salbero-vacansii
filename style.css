@@ -123,6 +123,9 @@ img {
 
 .hero__content {
   padding-top: 32px;
+  @media (max-width: 576px) {
+    padding-top: 21px;
+  }
 }
 
 .hero__subtitle {
@@ -153,6 +156,10 @@ img {
   gap: 10px;
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: 576px) {
+    gap: 7px;
+  }
 }
 
 .hero__advantages-item {
@@ -204,7 +211,7 @@ img {
 @media (max-width: 576px) {
   .hero__subtitle {
     text-align: center;
-    margin-bottom: 13px;
+    margin-bottom: 19px;
     color: var(--white);
   }
 
@@ -260,6 +267,9 @@ img {
 
 .employees__title {
   margin-bottom: 59px;
+  @media (max-width: 576px) {
+    margin-bottom: 25px;
+  }
 }
 
 .employees__content-list {
