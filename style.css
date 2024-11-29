@@ -2133,6 +2133,14 @@ img {
   margin-bottom: 10px;
 }
 
+@media (max-width: 1180px) {
+  .candidates__content-top,
+  .candidates__content-down {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+  }
+}
+
 @media (max-width: 621px) {
   .candidates {
     background: url('images/candidates/bgm.png') no-repeat top/ cover !important;
