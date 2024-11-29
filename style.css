@@ -2135,7 +2135,7 @@ img {
 
 @media (max-width: 621px) {
   .candidates {
-    background: url('images/slider-together/bgm.png') no-repeat center / cover !important;
+    background: url('images/candidates/bgm.png') no-repeat top/ cover !important;
   }
 }
 
@@ -2145,7 +2145,7 @@ img {
   }
 
   .candidates__title {
-    margin-bottom: 293px;
+    margin-bottom: 363px;
     text-align: center;
   }
 
