@@ -42,7 +42,7 @@
 
 body {
   /*background-color: #16120e;*/
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 
 .main {
@@ -62,10 +62,13 @@ li {
 }
 
 img {
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   display: block;
-  object-fit: cover;
+  /* object-fit: cover; */
+}
+input {
+  line-height: inherit;
 }
 
 .container {
@@ -473,6 +476,11 @@ img {
   min-height: 234px;
 }
 
+.together__img img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .together__title::first-letter {
   text-transform: uppercase;
 }
@@ -550,6 +558,11 @@ img {
 .sliderTogetherSwiper
   .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 30px;
+}
+
+.sliderTogetherSwiper .swiper-slide img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .slider-together__form {
@@ -806,6 +819,11 @@ img {
   }
 }
 
+.slider-employee-reviews__box-left-image img {
+  object-fit: cover;
+  width: 100%;
+}
+
 .slider-employee-reviews__box-left-name {
   padding: 0;
   margin: 0;
@@ -870,6 +888,8 @@ img {
 }
 
 .slider-employee-reviews__box-right img {
+  width: 100%;
+  object-fit: cover;
   @media (max-width: 400px) {
     width: 100%;
     height: 183%;
@@ -1122,6 +1142,7 @@ img {
   }
 
   .owners__content-img-box img {
+    width: 100%;
     object-fit: contain;
   }
 
@@ -1774,6 +1795,11 @@ img {
   border-bottom: 1px solid rgba(103, 101, 99, 0.2);
 }
 
+.cooperation__brands-item img {
+  width: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 576px) {
   .cooperation {
     border-top: 1px solid transparent;
@@ -1865,11 +1891,21 @@ img {
   overflow: hidden;
 }
 
+.slider-clients__box-left-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .slider-clients__box-right {
   border-radius: 10px;
   width: 263px;
   height: 356px;
   overflow: hidden;
+}
+
+.slider-clients__box-right img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .sliderClientsSwiper .swiper-button-next,
@@ -2050,12 +2086,11 @@ img {
   cursor: pointer;
 }
 
-/*.awardsSwiper .swiper-slide img {*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    object-fit: cover;*/
-/*    display: block;*/
-/*}*/
+.awardsSwiper .swiper-slide img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .awardsSwiper .swiper-wrapper {
   /*padding-left: 135px;*/
   padding-left: calc((100% - 1200px) / 2);
@@ -2208,6 +2243,11 @@ img {
   width: 100%;
   height: 560px;
   position: relative;
+}
+
+.map__container img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .map__container::after {
