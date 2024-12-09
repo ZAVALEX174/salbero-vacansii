@@ -120,6 +120,7 @@ input {
   line-height: 1.2;
   text-transform: uppercase;
   color: var(--white);
+  text-align: center;
 }
 
 .title__active {
@@ -390,6 +391,7 @@ input {
   text-transform: uppercase;
   text-align: center;
   padding-top: 16px;
+  font-size: clamp(1.25rem, 1.0299rem + 0.939vw, 1.875rem);
 }
 
 @media (max-width: 1068px) {
@@ -2416,4 +2418,8 @@ input {
 
 .scroll-lock {
   overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 0 !important;
 }
