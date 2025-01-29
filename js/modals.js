@@ -3,7 +3,7 @@ const modal = document.querySelector('.modal-form');
 const openModalBtns = document.querySelectorAll('.openModal');
 const closesModal = document.querySelector('.modal-form__close-btn');
 
-const modalTwo  = document.querySelector('.modal-form-zayavka');
+const modalTwo = document.querySelector('.modal-form-zayavka');
 const modalTwoOpenBtn = document.querySelector('.hero__entry-form-btn');
 
 modalTwoOpenBtn.addEventListener('click', (e) => {
@@ -36,3 +36,17 @@ document.addEventListener('keydown', event => {
         document.body.classList.remove('scroll-lock');
     }
 });
+
+document.addEventListener('click', (e) => {
+    const overlay = document.querySelector('.modal-form-zayavka');
+    const form = document.querySelector('.modal-form-zayavka');
+    console.log(overlay, form);
+
+    if (e.target == form) {
+        modalTwo.classList.remove('modal-form__opened');
+        modal.classList.remove('modal-form__opened');
+        document.body.classList.remove('scroll-lock');
+
+    }
+
+})
