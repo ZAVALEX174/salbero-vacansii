@@ -1,4 +1,3 @@
-
 const modal = document.querySelector('.modal-form');
 const openModalBtns = document.querySelectorAll('.openModal');
 const closesModal = document.querySelector('.modal-form__close-btn');
@@ -40,13 +39,18 @@ document.addEventListener('keydown', event => {
 document.addEventListener('click', (e) => {
     const overlay = document.querySelector('.modal-form-zayavka');
     const form = document.querySelector('.modal-form-zayavka');
-    console.log(overlay, form);
+    const form2 = document.querySelector('.modal-form__container');
+    // console.log(overlay, form);
 
-    if (e.target == form) {
+    if (e.target == form || e.target == modal) {
         modalTwo.classList.remove('modal-form__opened');
         modal.classList.remove('modal-form__opened');
         document.body.classList.remove('scroll-lock');
-
     }
 
+    // if (e.target == modal) {
+    //     modalTwo.classList.remove('modal-form__opened');
+    //     modal.classList.remove('modal-form__opened');
+    //     document.body.classList.remove('scroll-lock');
+    // }
 })
